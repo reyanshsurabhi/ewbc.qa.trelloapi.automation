@@ -7,7 +7,7 @@
 	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ewbc-api-framework</name>
+	<name>ewbc-trelloapi-poc</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -122,7 +122,7 @@
 					<localCheckout>true</localCheckout>
 				</configuration>
 			</plugin>
-			<!-- 
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -133,19 +133,9 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-			 -->
+		
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>nexus-release</id>
-			<url>${project.nexus.release.repo}</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>${project.nexus.snapshot.repo}</url>
-		</snapshotRepository>
-	</distributionManagement>
 	<profiles>
 		<profile>
 			<id>RestAssured</id>
@@ -176,61 +166,6 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>trelloapi.xml</suiteXmlFile>
 							</suiteXmlFiles>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<!-- Deploy to nexus repositories mvn deploy -PDeployToRelease -->
-		<profile>
-			<id>DeployToRelease</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.5.1</version>
-						<executions>
-							<execution>
-								<id>default-deploy-release</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<serverId>nexus-release</serverId>
-							<nexusUrl>${project.nexus.release.repo}</nexusUrl>
-							<skipStaging>true</skipStaging>
-							<skipTests>true</skipTests>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>DeployToSnapshot</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId>
-						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.5.1</version>
-						<executions>
-							<execution>
-								<id>default-deploy-snapshot</id>
-								<phase>deploy</phase>
-								<goals>
-									<goal>deploy</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<serverId>nexus-snapshots</serverId>
-							<nexusUrl>${project.nexus.snapshot.repo}</nexusUrl>
-							<skipStaging>true</skipStaging>
-							<skipTests>true</skipTests>
 						</configuration>
 					</plugin>
 				</plugins>
