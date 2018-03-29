@@ -15,16 +15,24 @@
 		<project.nexus.release.repo>http://localhost:8081/repository/ewbc.qa.api.framework/</project.nexus.release.repo>
 		<project.nexus.snapshot.repo>http://localhost:8081/repository/ewbc.qa.api.framework.snapshot/</project.nexus.snapshot.repo>
 	</properties>
-	<!-- <repositories> <repository> <id>central2</id> <name>webservices</name> 
-		<url>http://localhost:8081/repository/webservices/</url> </repository> </repositories> -->
+	<repositories>
+		<repository>
+			<id>central2</id>
+			<name>webservices</name>
+			<url>${project.nexus.release.repo}</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.11</version>
 		</dependency>
-		<!-- <dependency> <groupId>com.epam.webservices</groupId> <artifactId>webservices</artifactId> 
-			<version>0.0.2</version> </dependency> -->
+		<dependency>
+			<groupId>com.ewbc.api</groupId>
+			<artifactId>ewbc.qa.api.framework</artifactId>
+			<version>0.0.4</version>
+		</dependency>
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
@@ -121,7 +129,7 @@
 					<localCheckout>true</localCheckout>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -132,7 +140,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-		
+
 		</plugins>
 	</build>
 	<profiles>
