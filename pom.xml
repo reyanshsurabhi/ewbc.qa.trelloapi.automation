@@ -44,7 +44,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>4.3.6.RELEASE</version>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -105,7 +104,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -115,7 +113,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3.2</version>
 				<configuration>
 					<pushChanges>false</pushChanges>
 					<preparationGoals>clean package</preparationGoals>
