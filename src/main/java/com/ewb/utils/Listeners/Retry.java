@@ -4,7 +4,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import com.ewb.base.BaseTest;
-import com.ewb.utils.ExtentReports.ExtentTestManager;
+import com.ewb.utils.ExtentReport.ExtentTestManager;
  
 public class Retry extends BaseTest implements IRetryAnalyzer {
  

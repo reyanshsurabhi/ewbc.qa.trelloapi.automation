@@ -6,8 +6,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.ewb.base.BaseTest;
 import com.ewb.utils.Log;
-import com.ewb.utils.ExtentReports.ExtentManager;
-import com.ewb.utils.ExtentReports.ExtentTestManager;
+import com.ewb.utils.ExtentReport.ExtentManager;
+import com.ewb.utils.ExtentReport.ExtentTestManager;
  
  
 public class TestListener extends BaseTest implements ITestListener {
