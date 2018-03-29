@@ -1,0 +1,12 @@
+target/
+.classpath
+.project
+.settings
+target/
+test-output/
+.settings/
+Logs/
+/Logs/
+/ExtentReports/
+ExtentReports/
+bin/

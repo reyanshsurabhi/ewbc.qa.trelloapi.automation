@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Rest API">
+	<listeners>
+		<listener class-name="com.ewb.utils.Listeners.TestListener" />
+		<listener class-name="com.ewb.utils.Listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="API TEST" preserve-order="true">
+		<parameter name="domain" value="https://jsonplaceholder.typicode.com" />
+		<parameter name="resource" value="users" />
+		<classes>
+			<class name="com.ewb.webservices.tests.RestAssuresTests">
+				<methods>
+					<parameter name="statusCode" value="200" />
+					<include name="verifyStatusCode" />
+					<parameter name="headerKey" value="content-type" />
+					<parameter name="headerValue" value="application/json; charset=utf-8" />
+					<include name="verifyResponseContentType" />
+					<include name="verifyContentTypeHeader" />
+					<include name="verifyCountOfEmployees" />
+					<include name="printObjects" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

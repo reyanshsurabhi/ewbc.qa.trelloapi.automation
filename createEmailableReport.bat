@@ -1,0 +1,1 @@
+java -jar .\src\main\resources\extend-extent-report-1.0-jar-with-dependencies.jar "%WORKSPACE%\target\TestExecutionResults.html" "%WORKSPACE%"

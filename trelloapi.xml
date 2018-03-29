@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Rest API">
+	<listeners>
+		<listener class-name="com.ewb.utils.Listeners.TestListener" />
+		<listener class-name="com.ewb.utils.Listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="API TEST" preserve-order="true">
+		<classes>
+			<class name="com.ewb.webservices.tests.CreateBoardOnTrello" />
+		</classes>
+	</test>
+</suite>
