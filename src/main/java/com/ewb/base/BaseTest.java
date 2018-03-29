@@ -31,7 +31,7 @@ public class BaseTest {
 		config = ConfigManager.getInstance(PROPERTIES_FILE);	
 		String workingDir = System.getProperty("user.dir");
         extent = new ExtentReports(workingDir+"//target//TestExecutionResults.html", true);
-        extent.loadConfig(new File(workingDir+"//src/main//java//com//ewb//utils//ExtentReports//reportconfig.xml"));
+        extent.loadConfig(new File(workingDir+"//src/main//java//com//ewb//utils//ExtentReport//reportconfig.xml"));
 	}
 
 	@AfterSuite(alwaysRun = true)
