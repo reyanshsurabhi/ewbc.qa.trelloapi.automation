@@ -1,4 +1,4 @@
-package com.ewb.webservices.tests;
+package com.ewbautomation.webservices.tests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.ewb.base.BaseTest;
-import com.ewb.webservices.businessobjects.EmployeeInformation;
+import com.ewbautomation.base.BaseTest;
+import com.ewbautomation.webservices.businessobjects.EmployeeInformation;
 
 public class RestAssuresTests extends BaseTest{
 	Response response = null;

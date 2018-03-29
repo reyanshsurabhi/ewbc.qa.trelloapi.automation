@@ -6,7 +6,7 @@
 	</listeners>
 	<test name="API TEST" preserve-order="true">
 		<classes>
-			<class name="com.ewb.webservices.tests.CreateBoardOnTrello" />
+			<class name="com.ewbautomation.webservices.tests.CreateBoardOnTrello" />
 		</classes>
 	</test>
 </suite>

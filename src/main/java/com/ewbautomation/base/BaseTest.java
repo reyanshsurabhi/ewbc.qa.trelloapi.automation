@@ -1,4 +1,4 @@
-package com.ewb.base;
+package com.ewbautomation.base;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -31,7 +31,7 @@ public class BaseTest {
 		config = ConfigManager.getInstance(PROPERTIES_FILE);	
 		String workingDir = System.getProperty("user.dir");
         extent = new ExtentReports(workingDir+"//target//TestExecutionResults.html", true);
-        extent.loadConfig(new File(workingDir+"//src/main//java//com//ewb//utils//ExtentReport//reportconfig.xml"));
+        extent.loadConfig(new File(workingDir+"//src/main//java//com//ewbautomation//utils//ExtentReport//reportconfig.xml"));
 	}
 
 	@AfterSuite(alwaysRun = true)

@@ -1,4 +1,4 @@
-package com.ewb.webservices.businessobjects;
+package com.ewbautomation.webservices.businessobjects;
 
 public class Company {
 

@@ -1,4 +1,4 @@
-package com.ewb.webservices.tests;
+package com.ewbautomation.webservices.tests;
 
 import java.util.HashMap;
 
