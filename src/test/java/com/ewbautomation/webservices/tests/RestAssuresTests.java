@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.ewbautomation.base.BaseTest;
+import com.ewb.base.BaseTest;
 import com.ewbautomation.webservices.businessobjects.EmployeeInformation;
 
 public class RestAssuresTests extends BaseTest{
