@@ -142,7 +142,15 @@
 			</plugin>
 
 		</plugins>
+		<resources>
+			<resource>
+				<directory>
+				src/test/resources
+			</directory>
+			</resource>
+		</resources>
 	</build>
+
 	<profiles>
 		<profile>
 			<id>RestAssured</id>
@@ -164,6 +172,7 @@
 		<profile>
 			<id>trelloapi</id>
 			<build>
+
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
