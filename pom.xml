@@ -31,8 +31,14 @@
 		<dependency>
 			<groupId>com.ewbc.api</groupId>
 			<artifactId>ewbc.qa.api.framework</artifactId>
-			<version>0.0.9</version>
+			<version>0.0.10</version>
 		</dependency>
+		<dependency>
+    <groupId>ru.yandex.qatools.allure</groupId>
+    <artifactId>allure-maven-plugin</artifactId>
+    <version>2.6</version>
+</dependency>
+		
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
@@ -80,7 +86,7 @@
 			<artifactId>gson</artifactId>
 			<version>2.3</version>
 		</dependency>
-		<!-- 
+	<!-- 
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
